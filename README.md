@@ -8,18 +8,21 @@ I am only altering the frontend and running it on a different port.
 ![ScreenshotFrontend](Screenshot_Frontend.png)
 
 
-Added this to my docker compose, in parallel to the existing installation:
+#Added this to my docker compose, in parallel to the existing installation:
 
-  develancacheui_frontend_servicestats:
-    build:
-      context: https://github.com/Kev98710/DeveLanCacheUI_Frontend_shrinked.git#master
-      dockerfile: DeveLanCacheUI_Frontend/Dockerfile
-    restart: unless-stopped
-    ports:
-      - '7303:80'
-    environment:
-      - BACKENDURL=http://backend_ip_addr:7301 #iclude http/https here
-      - AllowedHosts=*
+```yaml
+develancacheui_frontend_servicestats:
+  build:
+    context: https://github.com/Kev98710/DeveLanCacheUI_Frontend_shrinked.git#master
+    dockerfile: DeveLanCacheUI_Frontend/Dockerfile
+  restart: unless-stopped
+  ports:
+    - '7303:80'
+  environment:
+    - BACKENDURL=http://backend_ip_addr:7301 #iclude http/https here
+    - AllowedHosts=*
+```
+
 
 
 
