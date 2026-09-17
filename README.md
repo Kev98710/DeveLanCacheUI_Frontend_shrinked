@@ -1,5 +1,5 @@
 # DeveLanCacheUI_Frontend_Shrinked
-This is a fork of unterlying DeveLanCacheUI_Frontend.
+This is a fork of underlying DeveLanCacheUI_Frontend.
 
 I have shrinked the Frontend to only Display the Service Download stats.
 In my case to use it for digital signage integration.
